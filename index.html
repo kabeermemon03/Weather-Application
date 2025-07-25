@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="WeatherAppLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="nav-links">
+        <div class="links-nav">
+            <img class="imgLogo" src="WeatherAppLogo.png" alt="Logo" />
+            <li>Home</li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Usage Guide</li>
+        </div>
+        <div class="search-container">
+
+            <input id="searchBar" type="search" placeholder="Enter city..." />
+            <button id="searchBtn" class="search">Search</button>
+
+        </div>
+    </nav>
+
+
+    <div class="h1-weather">
+        <h1>Weather For <span id="citySpan">City</span></h1>
+    </div>
+
+
+    <div class="parent">
+        <div class="card card1">
+            <h3>Temperature</h3>
+            <p id="temp">--°C</p>
+        </div>
+        <div class="card card2">
+            <h3>Humidity</h3>
+            <p id="humidity">--%</p>
+        </div>
+        <div class="card card3">
+            <h3>Wind</h3>
+            <p id="wind">-- km/h</p>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Weather Of Other Common Places</h1>
+    </div>
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">City</th>
+                <th scope="col">Temperature</th>
+                <th scope="col">Humidity</th>
+                <th scope="col">Wind</th>
+            </tr>
+        </thead>
+        <tbody id="weatherTableBody">
+           
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
